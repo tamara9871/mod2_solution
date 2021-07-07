@@ -1,30 +1,39 @@
 <!doctype html>
 <html lang="en">
 <head>  
-  
+
   <style>
     p {
       color: paleturquoise;
       background-color: rgb(104, 104, 156); 
       font-size: 20px;
-      font-style: Tahoma;
-    }
-    body {
-      margin: 20px;
-      padding: 20px;
-      background-color: burlywood;
-    }
-    title {
-      color: purple;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    h1 {
-      border-color: purple;
-      margin: 10px;
-      padding: 15px;
+      font-style: italic;
+      position: fixed;
     }
 
+    body {
+        background: coral;
+        margin: 10px;
+    }
+
+    .container {
+     position: relative;
+     width: 50px;
+     height: 30px;
+     margin: 20px;
+     color: burlywood;
+    }
+
+    .container .box {
+        position: relative;
+        width: calc(100px - 30px);
+        height: calc(100px - 30px);
+        background: purple;
+        margin: 15px;
+        float: left;
+        box-sizing: border-box;
+        border-radius: 10px;
+    }
 
    
   </style>
@@ -35,8 +44,14 @@
   </center>
 </head>
 <body>
-<div id="box">_</div>
-  <div class="Code">Learning to Code</div>
+  <div class="container">
+      <div class="box">    
+      </div>
+      <div class="box">
+      </div>
+      <div class="box">
+      </div>
+  </div>
     
 <center>
    <h1>Basics of Coding</h1>
